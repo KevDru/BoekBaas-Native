@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "UMVrQSxytC0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kevin\\source\\repos\\test\\test\\test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.web.webview2\\1.0.2651.64\\microsoft.web.webview2.1.0.2651.64.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\microsoft.windowsappsdk.1.6.250108002.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.12\\microsoft.netcore.app.runtime.win-x86.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.12\\microsoft.aspnetcore.app.runtime.win-x86.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.12\\microsoft.netcore.app.runtime.win-arm64.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.12\\microsoft.aspnetcore.app.runtime.win-x64.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.12\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.12\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\8.0.12\\microsoft.aspnetcore.app.runtime.win-arm64.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.12\\microsoft.netcore.app.runtime.win-x64.8.0.12.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.12\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
