@@ -8,11 +8,12 @@ namespace test.models
         public string Title { get; set; }
         public string Author { get; set; }
         public int publication_year { get; set; }
-        public bool IsBorrowed { get; set; }
+        public bool IsBorrowable { get; set; }
         public int? GenreId { get; set; }
         public Genre Genre { get; set; }
         public string ISBN { get; set; }
         public int? UserId { get; set; }
         public User User { get; set; }
+        
     }
 }

@@ -44,7 +44,10 @@
             <!-- Book Fields -->
             <TextBox x:Name="TitleInput" PlaceholderText="Title" Margin="0,5"/>
             <TextBox x:Name="AuthorInput" PlaceholderText="Author" Margin="0,5"/>
-            <TextBox x:Name="YearInput" PlaceholderText="Year Published" Margin="0,5"/>
+            <TextBlock Text="Date released:"/>
+            <DatePicker x:Name="YearInput"  Margin="0,5"/>
+                <TextBlock Text="Is borrowable?"/>
+                <CheckBox x:Name="Borrowable"/>
 
             <!-- Genre Selection -->
             <ComboBox x:Name="GenreComboBox" Margin="0,5" PlaceholderText="Select Genre">

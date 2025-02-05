@@ -3,6 +3,7 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using test.models;
+using System;
 
 namespace test
 {
@@ -35,22 +36,32 @@ namespace test
         {
             string title = TitleInput.Text.Trim();
             string author = AuthorInput.Text.Trim();
-            int year;
 
-            // Make sure required fields are not empty
-            if (!string.IsNullOrWhiteSpace(title) && !string.IsNullOrWhiteSpace(author) && int.TryParse(YearInput.Text, out year) && GenreComboBox.SelectedItem != null)
+            // Validate inputs
+            if (!string.IsNullOrWhiteSpace(title) &&
+                !string.IsNullOrWhiteSpace(author) &&
+                GenreComboBox.SelectedItem != null)
             {
+                int year = YearInput.Date.Year; // Extract the year correctly
                 Genre selectedGenre = (Genre)GenreComboBox.SelectedItem;
-                _context.Books.Add(new Book { Title = title, Author = author, publication_year = year, GenreId = selectedGenre.Id, ISBN = ISBNInput.Text.Trim() });
+
+                // Add new book to the database
+                _context.Books.Add(new Book
+                {
+                    Title = title,
+                    Author = author,
+                    publication_year = year,
+                    GenreId = selectedGenre.Id,
+                    ISBN = ISBNInput.Text.Trim()
+                });
+
                 _context.SaveChanges();
-                LoadBooks();  // Refresh the book list
-            }
-            else
-            {
-                // Handle validation errors
-                // For example, show a message to the user saying fields can't be empty or invalid
+                LoadBooks(); // Refresh the book list
+
             }
         }
+
+
 
         // Select Book from ListView
         private void BookList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -60,7 +71,7 @@ namespace test
             {
                 TitleInput.Text = _selectedBook.Title;
                 AuthorInput.Text = _selectedBook.Author;
-                YearInput.Text = _selectedBook.publication_year.ToString();
+                YearInput.Date = new DateTime(_selectedBook.publication_year, 1, 1);
                 ISBNInput.Text = _selectedBook.ISBN;
                 GenreComboBox.SelectedItem = _selectedBook.Genre;
             }
@@ -73,10 +84,12 @@ namespace test
             {
                 _selectedBook.Title = TitleInput.Text.Trim();
                 _selectedBook.Author = AuthorInput.Text.Trim();
-                int.TryParse(YearInput.Text, out int year);
+                int year = YearInput.Date.Year;
                 _selectedBook.publication_year = year;
                 _selectedBook.ISBN = ISBNInput.Text.Trim();
                 _selectedBook.GenreId = ((Genre)GenreComboBox.SelectedItem).Id;
+                _selectedBook.IsBorrowable = Borrowable.IsChecked ?? false;
+
 
                 _context.Books.Update(_selectedBook);
                 _context.SaveChanges();
@@ -94,7 +107,7 @@ namespace test
                 LoadBooks();  // Refresh the book list
                 TitleInput.Text = "";
                 AuthorInput.Text = "";
-                YearInput.Text = "";
+                YearInput.Date = new DateTimeOffset();
                 ISBNInput.Text = "";
                 GenreComboBox.SelectedItem = null;
             }

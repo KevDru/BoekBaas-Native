@@ -1,1 +1,1 @@
-C:\School\GitHub\BoekBaas-Native\test\test\test.csproj;x64
+C:\School\Github\BoekBaas-Native\test\test\test.csproj;x64

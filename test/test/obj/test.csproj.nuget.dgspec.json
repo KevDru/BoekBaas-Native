@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj": {}
+    "C:\\School\\Github\\BoekBaas-Native\\test\\test\\test.csproj": {}
   },
   "projects": {
-    "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj": {
+    "C:\\School\\Github\\BoekBaas-Native\\test\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj",
+        "projectUniqueName": "C:\\School\\Github\\BoekBaas-Native\\test\\test\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\obj\\",
+        "projectPath": "C:\\School\\Github\\BoekBaas-Native\\test\\test\\test.csproj",
+        "packagesPath": "C:\\Users\\Nancy\\.nuget\\packages\\",
+        "outputPath": "C:\\School\\Github\\BoekBaas-Native\\test\\test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nancy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows10.0.19041": {

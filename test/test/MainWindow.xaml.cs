@@ -3,17 +3,27 @@ using System.Linq;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using test.models;
+using test.Models;  // Make sure this matches your namespace
 
 namespace test
 {
     public partial class MainWindow : Window
     {
         private readonly AppDbContext _context = new AppDbContext();
+        private readonly SeedController _seedController;  // Add SeedController
 
         public MainWindow()
         {
             InitializeComponent();
+
+            _context.Database.EnsureDeleted ();
             _context.Database.EnsureCreated();
+
+            // Initialize SeedController and pass the context
+            _seedController = new SeedController(_context);
+
+            // Call SeedDatabase
+            _seedController.SeedDatabase();
         }
 
         // Login Button Click Event
@@ -26,8 +36,6 @@ namespace test
 
             if (user != null)
             {
-                
-
                 if (username == "admin")
                 {
                     MainFrame.Navigate(typeof(AdminPage));
@@ -37,18 +45,10 @@ namespace test
                     LoginStatus.Text = "Login successful!";
                     LoginStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Green);
                     LoginStatus.Visibility = Visibility.Visible;
-                    MainFrame.Navigate(typeof(UserPage));
+                    MainFrame.Navigate(typeof(UserPage), user);
                 }
             }
-            else
-            {
-                LoginStatus.Text = "Invalid username or password!";
-                LoginStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Red);
-                LoginStatus.Visibility = Visibility.Visible;
-            }
         }
-
-
 
         // Register Button Click Event
         private void Register_Click(object sender, RoutedEventArgs e)
