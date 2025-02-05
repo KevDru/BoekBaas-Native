@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\source\\repos\\test\\test\\test.csproj": {}
+    "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\source\\repos\\test\\test\\test.csproj": {
+    "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\source\\repos\\test\\test\\test.csproj",
+        "projectUniqueName": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\Users\\kevin\\source\\repos\\test\\test\\test.csproj",
+        "projectPath": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj",
         "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\source\\repos\\test\\test\\obj\\",
+        "outputPath": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +51,17 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
               "version": "[1.6.250108002, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0-preview.2.efcore.9.0.0, )"
             }
           },
           "imports": [

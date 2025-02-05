@@ -1,36 +1,106 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using test.models;
 
 namespace test
 {
-    /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainWindow : Window
+    public partial class MainWindow : Window
     {
+        private readonly AppDbContext _context = new AppDbContext();
+
         public MainWindow()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            _context.Database.EnsureCreated();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        // Login Button Click Event
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
-            myButton.Content = "Clicked";
+            string username = LoginUsername.Text.Trim();
+            string password = LoginPassword.Password;
+
+            var user = _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
+
+            if (user != null)
+            {
+                
+
+                if (username == "admin")
+                {
+                    MainFrame.Navigate(typeof(AdminPage));
+                }
+                else
+                {
+                    LoginStatus.Text = "Login successful!";
+                    LoginStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Green);
+                    LoginStatus.Visibility = Visibility.Visible;
+                    MainFrame.Navigate(typeof(UserPage));
+                }
+            }
+            else
+            {
+                LoginStatus.Text = "Invalid username or password!";
+                LoginStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Red);
+                LoginStatus.Visibility = Visibility.Visible;
+            }
+        }
+
+
+
+        // Register Button Click Event
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            string username = RegisterUsername.Text.Trim();
+            string password = RegisterPassword.Password;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                RegisterStatus.Text = "Username and password cannot be empty.";
+                RegisterStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Red);
+                RegisterStatus.Visibility = Visibility.Visible;
+                return;
+            }
+
+            if (_context.Users.Any(u => u.Username == username))
+            {
+                RegisterStatus.Text = "Username already exists!";
+                RegisterStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Red);
+                RegisterStatus.Visibility = Visibility.Visible;
+                return;
+            }
+
+            _context.Users.Add(new User { Username = username, Password = password });
+            _context.SaveChanges();
+
+            RegisterStatus.Text = "Registration successful! You can now log in.";
+            RegisterStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Green);
+            RegisterStatus.Visibility = Visibility.Visible;
+
+            SwitchToLogin();
+        }
+
+        // Switch to Register Page
+        private void SwitchToRegister_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPanel.Visibility = Visibility.Collapsed;
+            RegisterPanel.Visibility = Visibility.Visible;
+            LoginStatus.Visibility = Visibility.Collapsed;
+        }
+
+        // Switch to Login Page
+        private void SwitchToLogin_Click(object sender, RoutedEventArgs e)
+        {
+            SwitchToLogin();
+        }
+
+        private void SwitchToLogin()
+        {
+            RegisterPanel.Visibility = Visibility.Collapsed;
+            LoginPanel.Visibility = Visibility.Visible;
+            RegisterStatus.Visibility = Visibility.Collapsed;
         }
     }
 }

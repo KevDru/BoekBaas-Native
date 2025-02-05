@@ -1,16 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Window
-    x:Class="test.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:test"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="test">
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Frame x:ConnectionId='2' x:Name="MainFrame">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:ConnectionId='2' x:Name="myButton"                       >Click Me</Button>
-    </StackPanel>
+                <!-- Login Section -->
+                <StackPanel x:ConnectionId='3' x:Name="LoginPanel">
+                    <TextBlock Text="Login" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBox x:ConnectionId='10' x:Name="LoginUsername" Width="200" Margin="5" PlaceholderText="Username"/>
+                    <PasswordBox x:ConnectionId='11' x:Name="LoginPassword" Width="200" Margin="5"/>
+                    <Button x:ConnectionId='12' Content="Login" Width="200"                     />
+                    <TextBlock x:ConnectionId='13' x:Name="LoginStatus" Width="200" Foreground="Red" Visibility="Collapsed" TextAlignment="Center"/>
+                    <Button x:ConnectionId='14' Content="Go to Register" Width="200"                                />
+                </StackPanel>
+
+                <!-- Register Section -->
+                <StackPanel x:ConnectionId='4' x:Name="RegisterPanel" Visibility="Collapsed">
+                    <TextBlock Text="Register" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBox x:ConnectionId='5' x:Name="RegisterUsername" Width="200" Margin="5" PlaceholderText="Username"/>
+                    <PasswordBox x:ConnectionId='6' x:Name="RegisterPassword" Width="200" Margin="5"/>
+                    <Button x:ConnectionId='7' Content="Register" Width="200"                        />
+                    <TextBlock x:ConnectionId='8' x:Name="RegisterStatus" Width="200" Foreground="Red" Visibility="Collapsed" TextAlignment="Center"/>
+                    <Button x:ConnectionId='9' Content="Go to Login" Width="200"                             />
+                </StackPanel>
+
+            </StackPanel>
+        </Frame>
+    </Grid>
 </Window>
 

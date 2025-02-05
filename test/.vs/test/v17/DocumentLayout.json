@@ -1,20 +1,68 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kevin\\source\\repos\\test\\",
+  "WorkspaceRootPath": "C:\\School\\GitHub\\BoekBaas-Native\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\users\\kevin\\source\\repos\\test\\test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\userpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\userpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\users\\kevin\\source\\repos\\test\\test\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\UserPage.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\UserPage.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\users\\kevin\\source\\repos\\test\\test\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|c:\\school\\github\\boekbaas-native\\test\\test\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D34CECDC-1F87-481A-8D89-D430F9011E2B}|test\\test.csproj|solutionrelative:test\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -25,53 +73,196 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\kevin\\source\\repos\\test\\test\\App.xaml",
-              "RelativeDocumentMoniker": "test\\App.xaml",
-              "ToolTip": "C:\\Users\\kevin\\source\\repos\\test\\test\\App.xaml",
-              "RelativeToolTip": "test\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AdminPage.xaml",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\AdminPage.xaml",
+              "RelativeDocumentMoniker": "test\\AdminPage.xaml",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\AdminPage.xaml",
+              "RelativeToolTip": "test\\AdminPage.xaml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-29T08:11:58.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T08:24:42.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "test\\MainWindow.xaml",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\MainWindow.xaml",
+              "RelativeToolTip": "test\\MainWindow.xaml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-28T19:57:22.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\User.cs",
+              "RelativeDocumentMoniker": "test\\Models\\User.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\User.cs",
+              "RelativeToolTip": "test\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:10:46.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "genre.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\genre.cs",
+              "RelativeDocumentMoniker": "test\\Models\\genre.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\genre.cs",
+              "RelativeToolTip": "test\\Models\\genre.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:30:37.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "test\\Models\\Book.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\Book.cs",
+              "RelativeToolTip": "test\\Models\\Book.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:47:27.376Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "test\\Models\\AppDBContext.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Models\\AppDBContext.cs",
+              "RelativeToolTip": "test\\Models\\AppDBContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T07:57:14.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserPage.xaml.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\UserPage.xaml.cs",
+              "RelativeDocumentMoniker": "test\\UserPage.xaml.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\UserPage.xaml.cs",
+              "RelativeToolTip": "test\\UserPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:01:24.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "test\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\MainWindow.xaml.cs",
+              "RelativeToolTip": "test\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T07:58:26.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminPage.xaml.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\AdminPage.xaml.cs",
+              "RelativeDocumentMoniker": "test\\AdminPage.xaml.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\AdminPage.xaml.cs",
+              "RelativeToolTip": "test\\AdminPage.xaml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAADwv3gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:33:22.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserPage.xaml",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\UserPage.xaml",
+              "RelativeDocumentMoniker": "test\\UserPage.xaml",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\UserPage.xaml",
+              "RelativeToolTip": "test\\UserPage.xaml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-05T09:00:30.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Package.appxmanifest",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Package.appxmanifest",
+              "RelativeDocumentMoniker": "test\\Package.appxmanifest",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\Package.appxmanifest",
+              "RelativeToolTip": "test\\Package.appxmanifest",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001793|",
+              "WhenOpened": "2025-02-05T10:35:22.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserPage.g.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\UserPage.g.cs",
+              "RelativeDocumentMoniker": "test\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\UserPage.g.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\UserPage.g.cs",
+              "RelativeToolTip": "test\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\UserPage.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:05:09.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "test.csproj",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj",
+              "RelativeDocumentMoniker": "test\\test.csproj",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\test.csproj",
+              "RelativeToolTip": "test\\test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-05T09:00:18.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\App.xaml",
+              "RelativeDocumentMoniker": "test\\App.xaml",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\App.xaml",
+              "RelativeToolTip": "test\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-29T08:11:58.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
               "DocumentMoniker": "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\kevin\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
               "ToolTip": "C:\\Users\\kevin\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "ViewState": "AgIAAOkBAAAAAAAAAAAwwPgBAAAIAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\kevin\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAwwHkBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-01-28T19:57:45.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\kevin\\source\\repos\\test\\test\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "test\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\kevin\\source\\repos\\test\\test\\MainWindow.xaml",
-              "RelativeToolTip": "test\\MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-28T19:57:22.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kevin\\source\\repos\\test\\test\\App.xaml.cs",
+              "DocumentMoniker": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\App.xaml.cs",
               "RelativeDocumentMoniker": "test\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\kevin\\source\\repos\\test\\test\\App.xaml.cs",
+              "ToolTip": "C:\\School\\GitHub\\BoekBaas-Native\\test\\test\\App.xaml.cs",
               "RelativeToolTip": "test\\App.xaml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAkwC8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

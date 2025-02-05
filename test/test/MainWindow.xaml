@@ -1,15 +1,31 @@
-    <?xml version="1.0" encoding="utf-8"?>
-<Window
-    x:Class="test.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:test"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="test">
+<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Frame x:Name="MainFrame">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+                <!-- Login Section -->
+                <StackPanel x:Name="LoginPanel">
+                    <TextBlock Text="Login" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="LoginUsername" Width="200" Margin="5" PlaceholderText="Username"/>
+                    <PasswordBox x:Name="LoginPassword" Width="200" Margin="5"/>
+                    <Button Content="Login" Width="200" Click="Login_Click" />
+                    <TextBlock x:Name="LoginStatus" Width="200" Foreground="Red" Visibility="Collapsed" TextAlignment="Center"/>
+                    <Button Content="Go to Register" Width="200" Click="SwitchToRegister_Click" />
+                </StackPanel>
+
+                <!-- Register Section -->
+                <StackPanel x:Name="RegisterPanel" Visibility="Collapsed">
+                    <TextBlock Text="Register" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="RegisterUsername" Width="200" Margin="5" PlaceholderText="Username"/>
+                    <PasswordBox x:Name="RegisterPassword" Width="200" Margin="5"/>
+                    <Button Content="Register" Width="200" Click="Register_Click" />
+                    <TextBlock x:Name="RegisterStatus" Width="200" Foreground="Red" Visibility="Collapsed" TextAlignment="Center"/>
+                    <Button Content="Go to Login" Width="200" Click="SwitchToLogin_Click" />
+                </StackPanel>
+
+            </StackPanel>
+        </Frame>
+    </Grid>
 </Window>
