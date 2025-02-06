@@ -10,7 +10,6 @@
 
     <Grid Padding="20">
         <StackPanel>
-            <!-- Book List Section Header -->
             <TextBlock 
                 Text="Book Overview" 
                 FontSize="24" 
@@ -18,7 +17,6 @@
                 HorizontalAlignment="Center" 
                 Margin="0,0,0,10"/>
 
-            <!-- Book List -->
             <ListView x:ConnectionId='2' 
                 x:Name="BookList" 
                 Height="300" 
@@ -66,7 +64,6 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <!-- Borrowed Books Section Header -->
             <TextBlock 
                 Text="Borrowed Books" 
                 FontSize="20" 

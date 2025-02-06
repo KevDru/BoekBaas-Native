@@ -47,9 +47,9 @@ namespace test.Models
             {
                 var users = new List<User>
                 {
-                    new User { Username = "test", Password = "test" },
-                    new User { Username = "test2",  Password = "test" },
-                    new User { Username = "admin",  Password = "admin" },
+                    new User { Username = "test", Password = "test", Role ="user" },
+                    new User { Username = "test2",  Password = "test", Role ="user" },
+                    new User { Username = "admin",  Password = "admin", Role ="Admin" },
                 };
 
                 _context.Users.AddRange(users);
@@ -61,7 +61,7 @@ namespace test.Models
         {
             if (!_context.Books.Any())
             {
-                var genres = _context.Genres.ToList(); // Get genres from the database (assuming they already exist)
+                var genres = _context.Genres.ToList(); 
 
                 var books = new List<Book>
                 {

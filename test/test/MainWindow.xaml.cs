@@ -3,54 +3,44 @@ using System.Linq;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using test.models;
-using test.Models;  // Make sure this matches your namespace
+using test.Models;
 
 namespace test
 {
     public partial class MainWindow : Window
     {
         private readonly AppDbContext _context = new AppDbContext();
-        private readonly SeedController _seedController;  // Add SeedController
+        private readonly SeedController _seedController;
 
         public MainWindow()
         {
             InitializeComponent();
-
-            _context.Database.EnsureDeleted ();
+            _context.Database.EnsureDeleted();
             _context.Database.EnsureCreated();
-
-            // Initialize SeedController and pass the context
             _seedController = new SeedController(_context);
-
-            // Call SeedDatabase
             _seedController.SeedDatabase();
         }
 
-        // Login Button Click Event
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            string username = LoginUsername.Text.Trim();
-            string password = LoginPassword.Password;
+            var username = LoginUsername.Text;
+            var password = LoginPassword.Password;
 
             var user = _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
 
             if (user != null)
             {
-                if (username == "admin")
+                if (user.Role == "Admin")
                 {
                     MainFrame.Navigate(typeof(AdminPage));
                 }
                 else
                 {
-                    LoginStatus.Text = "Login successful!";
-                    LoginStatus.Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Green);
-                    LoginStatus.Visibility = Visibility.Visible;
                     MainFrame.Navigate(typeof(UserPage), user);
                 }
             }
         }
 
-        // Register Button Click Event
         private void Register_Click(object sender, RoutedEventArgs e)
         {
             string username = RegisterUsername.Text.Trim();
@@ -82,7 +72,6 @@ namespace test
             SwitchToLogin();
         }
 
-        // Switch to Register Page
         private void SwitchToRegister_Click(object sender, RoutedEventArgs e)
         {
             LoginPanel.Visibility = Visibility.Collapsed;
@@ -90,7 +79,6 @@ namespace test
             LoginStatus.Visibility = Visibility.Collapsed;
         }
 
-        // Switch to Login Page
         private void SwitchToLogin_Click(object sender, RoutedEventArgs e)
         {
             SwitchToLogin();

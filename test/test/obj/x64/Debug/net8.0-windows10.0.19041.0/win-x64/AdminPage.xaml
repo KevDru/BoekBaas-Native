@@ -7,11 +7,9 @@
 
     <Grid Padding="20">
         <ScrollViewer>
-        <StackPanel>
-            <!-- Book Management Header -->
-            <TextBlock Text="Book Management" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+            <StackPanel>
+                <TextBlock Text="Book Management" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
 
-            <!-- Book List Section -->
             <ListView x:ConnectionId='2' x:Name="BookList" Height="200"                                             >
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -41,16 +39,15 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <!-- Book Fields -->
+           
             <TextBox x:ConnectionId='3' x:Name="TitleInput" PlaceholderText="Title" Margin="0,5"/>
             <TextBox x:ConnectionId='4' x:Name="AuthorInput" PlaceholderText="Author" Margin="0,5"/>
             <TextBlock Text="Date released:"/>
             <DatePicker x:ConnectionId='5' x:Name="YearInput"  Margin="0,5"/>
                 <TextBlock Text="Is borrowable?"/>
                 <CheckBox x:ConnectionId='6' x:Name="Borrowable"/>
-
-            <!-- Genre Selection -->
-            <ComboBox x:ConnectionId='7' x:Name="GenreComboBox" Margin="0,5" PlaceholderText="Select Genre">
+            
+                <ComboBox x:ConnectionId='7' x:Name="GenreComboBox" Margin="0,5" PlaceholderText="Select Genre">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding Name}"/>
@@ -58,23 +55,18 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
 
-            <!-- ISBN Field -->
             <TextBox x:ConnectionId='8' x:Name="ISBNInput" PlaceholderText="ISBN" Margin="0,5"/>
 
-            <!-- CRUD Buttons -->
             <StackPanel Orientation="Horizontal" Spacing="10">
                 <Button x:ConnectionId='11' Content="Add Book"                      />
                 <Button x:ConnectionId='12' Content="Update Book"                         />
                 <Button x:ConnectionId='13' Content="Delete Book"                         />
             </StackPanel>
 
-            <!-- Genre Management Section -->
             <TextBlock Text="Manage Genres" FontSize="20" FontWeight="Bold" Margin="0,20,0,10"/>
 
-            <!-- Genre Name Field -->
             <TextBox x:ConnectionId='9' x:Name="GenreNameInput" PlaceholderText="Genre Name" Margin="0,5"/>
 
-            <!-- Add Genre Button -->
             <Button x:ConnectionId='10' Content="Add Genre"                        Margin="0,5"/>
                 
             </StackPanel>

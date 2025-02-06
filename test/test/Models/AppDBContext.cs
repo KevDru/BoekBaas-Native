@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore ;
 
 namespace test.models
 {
@@ -13,7 +13,7 @@ namespace test.models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
            
-            optionsBuilder.UseMySql("server=localhost;port=3306;user=root;password=root;database=boekbaas", ServerVersion.Parse("8.0.30"));
+            optionsBuilder.UseMySql("server=localhost;port=3306;user=root;password=;database=boekbaas", ServerVersion.Parse("8.0.30"));
             base.OnConfiguring(optionsBuilder);
         }
     
@@ -24,13 +24,18 @@ namespace test.models
                 .HasOne(b => b.User)
                 .WithMany(u => u.BorrowedBooks)
                 .HasForeignKey(b => b.UserId)
-                .OnDelete(DeleteBehavior.SetNull); 
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Book>()
-                .HasOne(b => b.Genre)  
-                .WithMany(g => g.Books) 
+                .HasOne(b => b.Genre)
+                .WithMany(g => g.Books)
                 .HasForeignKey(b => b.GenreId)
-                .OnDelete(DeleteBehavior.SetNull); 
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<User>()
+           .Property(u => u.Role)
+           .HasConversion<string>();
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

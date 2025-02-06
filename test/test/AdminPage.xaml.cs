@@ -10,42 +10,37 @@ namespace test
     public sealed partial class AdminPage : Page
     {
         private readonly AppDbContext _context = new AppDbContext();
-        private Book _selectedBook;  // Stores the selected book for updates/deletes
+        private Book _selectedBook;
 
         public AdminPage()
         {
             this.InitializeComponent();
-            LoadGenres();  // Load genres when the page is initialized
-            LoadBooks();   // Load books into the list
+            LoadGenres();
+            LoadBooks();
         }
 
-        // Load books into the ListView
         private void LoadBooks()
         {
             BookList.ItemsSource = _context.Books.Include(b => b.Genre).ToList();
         }
 
-        // Load genres into the ComboBox
         private void LoadGenres()
         {
             GenreComboBox.ItemsSource = _context.Genres.ToList();
         }
 
-        // Add Book
         private void AddBook_Click(object sender, RoutedEventArgs e)
         {
             string title = TitleInput.Text.Trim();
             string author = AuthorInput.Text.Trim();
 
-            // Validate inputs
             if (!string.IsNullOrWhiteSpace(title) &&
                 !string.IsNullOrWhiteSpace(author) &&
                 GenreComboBox.SelectedItem != null)
             {
-                int year = YearInput.Date.Year; // Extract the year correctly
+                int year = YearInput.Date.Year;
                 Genre selectedGenre = (Genre)GenreComboBox.SelectedItem;
 
-                // Add new book to the database
                 _context.Books.Add(new Book
                 {
                     Title = title,
@@ -56,14 +51,10 @@ namespace test
                 });
 
                 _context.SaveChanges();
-                LoadBooks(); // Refresh the book list
-
+                LoadBooks();
             }
         }
 
-
-
-        // Select Book from ListView
         private void BookList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             _selectedBook = (Book)BookList.SelectedItem;
@@ -77,7 +68,6 @@ namespace test
             }
         }
 
-        // Update Selected Book
         private void UpdateBook_Click(object sender, RoutedEventArgs e)
         {
             if (_selectedBook != null)
@@ -90,21 +80,19 @@ namespace test
                 _selectedBook.GenreId = ((Genre)GenreComboBox.SelectedItem).Id;
                 _selectedBook.IsBorrowable = Borrowable.IsChecked ?? false;
 
-
                 _context.Books.Update(_selectedBook);
                 _context.SaveChanges();
-                LoadBooks();  // Refresh the book list
+                LoadBooks();
             }
         }
 
-        // Delete Selected Book
         private void DeleteBook_Click(object sender, RoutedEventArgs e)
         {
             if (_selectedBook != null)
             {
                 _context.Books.Remove(_selectedBook);
                 _context.SaveChanges();
-                LoadBooks();  // Refresh the book list
+                LoadBooks();
                 TitleInput.Text = "";
                 AuthorInput.Text = "";
                 YearInput.Date = new DateTimeOffset();
@@ -113,21 +101,17 @@ namespace test
             }
         }
 
-        // Add Genre
         private void AddGenre_Click(object sender, RoutedEventArgs e)
         {
             string genreName = GenreNameInput.Text.Trim();
 
-            // Ensure genre name is not empty
             if (!string.IsNullOrWhiteSpace(genreName))
             {
-
                 _context.Genres.Add(new Genre { Name = genreName });
                 _context.SaveChanges();
                 LoadGenres();
                 GenreNameInput.Text = "";
             }
         }
-        
     }
 }

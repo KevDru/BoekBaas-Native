@@ -10,10 +10,10 @@ namespace test.models
     {
         public int Id { get; set; }
         public int BookId { get; set; }
-        public Book Book { get; set; } // Navigation property to Book
+        public Book Book { get; set; } 
         public int UserId { get; set; }
-        public User User { get; set; } // Navigation property to User
-        public DateTime? ReturnDate { get; set; } // Nullable return date (for borrowed books)
+        public User User { get; set; } 
+        public DateTime? ReturnDate { get; set; } 
     }
 }
 

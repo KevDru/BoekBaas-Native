@@ -5,7 +5,6 @@
         <Frame x:ConnectionId='2' x:Name="MainFrame">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-                <!-- Login Section -->
                 <StackPanel x:ConnectionId='3' x:Name="LoginPanel">
                     <TextBlock Text="Login" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <TextBox x:ConnectionId='10' x:Name="LoginUsername" Width="200" Margin="5" PlaceholderText="Username"/>
@@ -15,7 +14,6 @@
                     <Button x:ConnectionId='14' Content="Go to Register" Width="200"                                />
                 </StackPanel>
 
-                <!-- Register Section -->
                 <StackPanel x:ConnectionId='4' x:Name="RegisterPanel" Visibility="Collapsed">
                     <TextBlock Text="Register" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <TextBox x:ConnectionId='5' x:Name="RegisterUsername" Width="200" Margin="5" PlaceholderText="Username"/>

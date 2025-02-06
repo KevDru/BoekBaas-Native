@@ -5,7 +5,6 @@
         <Frame x:Name="MainFrame">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-                <!-- Login Section -->
                 <StackPanel x:Name="LoginPanel">
                     <TextBlock Text="Login" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <TextBox x:Name="LoginUsername" Width="200" Margin="5" PlaceholderText="Username"/>
@@ -15,7 +14,6 @@
                     <Button Content="Go to Register" Width="200" Click="SwitchToRegister_Click" />
                 </StackPanel>
 
-                <!-- Register Section -->
                 <StackPanel x:Name="RegisterPanel" Visibility="Collapsed">
                     <TextBlock Text="Register" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <TextBox x:Name="RegisterUsername" Width="200" Margin="5" PlaceholderText="Username"/>
